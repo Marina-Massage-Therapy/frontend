@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  width: 100vw;
+  font-family: Raleway, serif;
+
+  /* font-family: 'Quattrocento Sans', Arial, Helvetica, sans-serif; */
+  /* background-color: #f7f7f7; */
+}
