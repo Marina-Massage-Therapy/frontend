@@ -9,6 +9,7 @@ const AboutMe = () => {
         <div className="about-container">
           <div className="about-title">
             <p>Who am I? Marina</p>
+            <p>this is olia feature</p>
           </div>
 
           <div className="content-container">
