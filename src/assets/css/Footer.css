@@ -1,0 +1,9 @@
+.footer-container {
+  display: flex;
+}
+.background-photo {
+  position: relative;
+}
+.background-photo img {
+  object-fit: contain;
+}

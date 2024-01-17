@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  min-height: 70px;
+  /* z-index: 999; */
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-left-logo {
+  height: 37px;
+  span {
+    margin-left: 7px;
+    font-size: 16px;
+  }
+}
+
+/* .header-left-logo > h3 {
+  margin-right: 7px;
+} */
+
+.header-left-name {
+  span {
+    margin-right: 7px;
+    font-size: 14px;
+  }
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}

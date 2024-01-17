@@ -8,12 +8,14 @@ import Massages from "./pages/Massages";
 import AboutMe from "./pages/AboutMe";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import Footer from "./cmps/Footer";
 
 function App() {
   return (
     <div className="App">
       <Box>
         <Header />
+
         <Routes>
           <Route
             path="/"
@@ -40,6 +42,7 @@ function App() {
             element={<Contact />}
           />
         </Routes>
+        <Footer />
       </Box>
     </div>
   );

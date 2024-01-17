@@ -1,29 +1,30 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Flex } from "@chakra-ui/react";
+
+import "../assets/css/Header.css";
+// import { Center, Chakra} from "@chakra-ui/react";
 
 const Header = ({ onChangeLang }) => {
   return (
-    <Flex
-      display={{ base: "none", md: "flex" }}
-      position="sticky"
-      top="0px"
-      as="nav"
-      align="center"
-      justify="space-around"
-      fontSize="xl"
-      fontFamily="Poppins, sans-serif"
-      wrap="wrap"
-      padding={6}
-      zIndex="100"
-      w="100%"
-    >
-      <NavLink to={"/home"}>Home</NavLink>
-      <NavLink to={"/about"}>About</NavLink>
-      <NavLink to={"/massages"}>Massages</NavLink>
-      <NavLink to={"/testimonials"}>Testimonials</NavLink>
-      <NavLink to={"/contact"}>Contact</NavLink>
-    </Flex>
+    <div className="header">
+      <div className="header-content">
+        <div className="header-left">
+          <div className="header-left-logo">
+            <span>logo</span>
+            <div className="header-left-name">
+              <span>MARINA</span>
+            </div>
+          </div>
+        </div>
+        <div className="header-right">
+          <NavLink to={"/home"}>HOME</NavLink>
+          <NavLink to={"/about"}>ABOUT</NavLink>
+          <NavLink to={"/massages"}>MASSAGES</NavLink>
+          <NavLink to={"/testimonials"}>TESTIMONIALS</NavLink>
+          <NavLink to={"/contact"}>CONTACT</NavLink>
+        </div>
+      </div>
+    </div>
   );
 };
 

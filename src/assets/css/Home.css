@@ -1,0 +1,128 @@
+/* .home-conrainer {
+  display: flex;
+}
+.background-photo > img {
+  background-size: cover;
+  height: 100vh;
+} */
+
+.home-container {
+  display: flex;
+}
+.background-photo {
+  position: relative;
+  z-index: 1000;
+}
+
+.background-photo img {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.overlay-text {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1001;
+}
+.overlay-text > h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+  text-align: left;
+  /* line-height: 126px; */
+}
+
+.overlay-text > h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  text-align: left;
+}
+.welcome-container {
+  display: flex;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-left: 212px;
+  margin-right: 212px;
+  position: relative;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.title-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  /* justify-content: center; */
+}
+.title-wrap > h6 {
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+}
+.title-wrap > h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.content-wrap {
+  margin: 30px 0 45px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.content-wrap > p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .home-container {
+    max-width: 100%;
+  }
+  .background-photo > img {
+    /* min-width: 106px; */
+    width: 100%;
+    height: 492px;
+    margin: 0;
+  }
+}
+.read-more-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+}
+button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.8s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #ffffff;
+}
+button:hover {
+  background-position: right center; /* change the direction of the change here*/
+  color: #fff;
+  text-decoration: none;
+}
