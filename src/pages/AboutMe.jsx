@@ -8,7 +8,7 @@ const AboutMe = () => {
       <Parallax speed={-10}>
         <div className="about-container">
           <div className="about-title">
-            <p>Who am I?</p>
+            <p>Who am I? Marina</p>
           </div>
 
           <div className="content-container">
