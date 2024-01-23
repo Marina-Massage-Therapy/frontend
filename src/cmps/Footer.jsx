@@ -1,6 +1,7 @@
 import React from "react";
 import FooterPic from "../assets/img/footerPic.png";
 import "../assets/css/Footer.css";
+import Contact from "../cmps/Contact";
 
 const Footer = () => {
   return (
@@ -10,6 +11,9 @@ const Footer = () => {
           src={FooterPic}
           alt="footerPic"
         />
+        <div className="footer-wrap-contact">
+          <Contact />
+        </div>
       </div>
     </div>
   );

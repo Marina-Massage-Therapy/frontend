@@ -12,7 +12,6 @@ const Home = () => {
         <div className="overlay-text">
           <h1>Marina Massage Therapist</h1>
 
-          {/* <p>I'm professional massage therapist specializationes in</p> */}
           <h4>
             Your well-being is my focus, and your journey to balance and tension
             relese begins now.

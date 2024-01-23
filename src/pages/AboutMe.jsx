@@ -1,6 +1,7 @@
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import React from "react";
 import "../assets/css/AboutMe.css";
+import Marina from "../assets/img/marina.jpg";
 
 const AboutMe = () => {
   return (
@@ -50,7 +51,10 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="content-container-right">
-              <h1>I'm an image</h1>
+              <img
+                src={Marina}
+                alt="MarinaPic"
+              />
             </div>
           </div>
         </div>

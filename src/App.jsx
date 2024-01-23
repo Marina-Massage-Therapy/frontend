@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Massages from "./pages/Massages";
 import AboutMe from "./pages/AboutMe";
 import Testimonials from "./pages/Testimonials";
-import Contact from "./pages/Contact";
+
 import Footer from "./cmps/Footer";
 
 function App() {
@@ -36,10 +36,6 @@ function App() {
           <Route
             path="/testimonials"
             element={<Testimonials />}
-          />
-          <Route
-            path="/contact"
-            element={<Contact />}
           />
         </Routes>
         <Footer />

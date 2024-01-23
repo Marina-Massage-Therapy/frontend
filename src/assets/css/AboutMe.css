@@ -8,7 +8,7 @@
   margin-top: 50px;
 }
 .about-title > p {
-  font-size: 20px;
+  font-size: 30px;
 }
 .content-container {
   display: flex;
@@ -25,8 +25,14 @@
 }
 .content-container-left > p {
   text-align: left;
+  font-size: 18px;
 }
 .content-container-right {
   display: flex;
   justify-content: center;
+}
+.content-container-right img {
+  width: 700px;
+  height: 750px;
+  object-fit: cover;
 }

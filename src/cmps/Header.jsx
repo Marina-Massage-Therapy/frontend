@@ -21,7 +21,6 @@ const Header = ({ onChangeLang }) => {
           <NavLink to={"/about"}>ABOUT</NavLink>
           <NavLink to={"/massages"}>MASSAGES</NavLink>
           <NavLink to={"/testimonials"}>TESTIMONIALS</NavLink>
-          <NavLink to={"/contact"}>CONTACT</NavLink>
         </div>
       </div>
     </div>

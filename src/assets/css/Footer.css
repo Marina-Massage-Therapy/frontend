@@ -1,14 +1,27 @@
 .footer-container {
   display: flex;
-  width: 100%;
-  margin: auto;
+  margin-top: 50px;
+  flex-direction: column;
+
+  /* width: 100%;
+  margin: auto; */
 }
 .footer-photo {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  height: 670px;
+  /* flex-wrap: wrap; */
 }
 .footer-photo img {
   background-size: cover;
 
-  /* width: 100%;
-  height: 100vh; */
+  width: 100%;
+  height: 100vh;
+}
+.footer-wrap-contact {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  top: 50px;
 }

@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: sticky;
   top: 0;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -23,10 +21,6 @@
     font-size: 16px;
   }
 }
-
-/* .header-left-logo > h3 {
-  margin-right: 7px;
-} */
 
 .header-left-name {
   span {
