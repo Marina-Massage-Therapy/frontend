@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   font-weight: 600;
+  padding-top: 50px;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 .about-title {
   margin-top: 50px;
@@ -12,27 +16,51 @@
 }
 .content-container {
   display: flex;
-  justify-content: space-around;
-  padding: 8px;
-  flex-direction: row;
-  width: 100%;
+  justify-content: space-between;
+  gap:20px;
+  padding: 0 30px; 
 }
 .content-container-left {
   display: flex;
   flex-direction: column;
-  padding-left: 8px;
-  width: 600px;
+  width: 50%;
 }
 .content-container-left > p {
   text-align: left;
   font-size: 18px;
 }
+.content-container-left > p:first-child {
+  margin: 0; /* Add your desired margin value */
+}
+
 .content-container-right {
   display: flex;
   justify-content: center;
+  width: 50%;
 }
 .content-container-right img {
-  width: 700px;
-  height: 750px;
+  width: 100%;
+  height:620px;
   object-fit: cover;
+}
+
+@media (max-width: 500px) {
+.content-container {
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+  }
+  .content-container-left{
+    width: 90%
+  }
+  .content-container-left > p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .about-title {
+    margin-top: 0;
+  }
+  .content-container-right {
+    width: 100%;
+  }
 }

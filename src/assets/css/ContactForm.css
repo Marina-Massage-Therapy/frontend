@@ -1,0 +1,70 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('path-to-your-background-image.jpg'); /* Update the path to your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.contact-info-section,
+.contact-info {
+  flex-basis: 50%;
+}
+
+.contact-form-section,
+.contact-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form-section input,
+.contact-form-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button,
+.contact-form-section button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .contact-container,
+  .contact-info-section,
+  .contact-form-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Additional responsive adjustments as needed */
+@media (max-width: 500px) {
+  .contact-form-section,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form textarea{
+    min-height: 100px;
+  }
+
+  .contact-info-section,
+  .contact-info {
+    flex-basis: 100%;
+  }
+}

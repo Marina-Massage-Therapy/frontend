@@ -1,21 +1,27 @@
-import React from "react";
-import FooterPic from "../assets/img/footerPic.png";
 import "../assets/css/Footer.css";
-import Contact from "../cmps/Contact";
+import ContactForm from "./ContactForm";
 
-const Footer = () => {
+const Footer = ({ backgroundImage, phoneNumber }) => {
   return (
-    <div className="footer-container">
-      <div className="footer-photo">
-        <img
-          src={FooterPic}
-          alt="footerPic"
-        />
-        <div className="footer-wrap-contact">
-          <Contact />
-        </div>
+    <footer
+      className="footer"
+      style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="footer-content">
+        {/* <h2>Book Your Massage</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a href="#" className="book-online-btn">
+          BOOK ONLINE
+        </a>
+        <p className="call-text">or call me at</p>
+        <a href={`tel:${phoneNumber}`} className="phone-number">
+          {phoneNumber}
+        </a> */}
+        <ContactForm />
       </div>
-    </div>
+    </footer>
   );
 };
 

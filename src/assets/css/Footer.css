@@ -1,27 +1,64 @@
-.footer-container {
-  display: flex;
-  margin-top: 50px;
-  flex-direction: column;
-
-  /* width: 100%;
-  margin: auto; */
-}
-.footer-photo {
-  display: flex;
+.footer {
   position: relative;
-  flex-direction: column;
-  height: 670px;
-  /* flex-wrap: wrap; */
-}
-.footer-photo img {
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
   background-size: cover;
-
-  width: 100%;
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.footer-wrap-contact {
-  display: flex;
-  position: absolute;
-  right: 100px;
-  top: 50px;
+
+.footer-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.footer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.book-online-btn {
+  background-color: #b565a7;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.book-online-btn:hover {
+  background-color: #a0528c;
+}
+
+.call-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+  color: #adcbe3;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
 }
