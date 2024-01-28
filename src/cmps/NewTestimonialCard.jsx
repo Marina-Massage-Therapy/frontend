@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../assets/css/NewTestimonialCard.css"; // Make sure the path is correct
+import "../assets/css/NewTestimonialCard.css";
 import {
   create_testimonial,
   set_selected_testimonial,
@@ -46,12 +46,18 @@ const NewTestimonialCard = () => {
 
   return (
     <div className="new-testimonial-container">
-      <button onClick={hideFormAndResetField} className="toggle-button">
+      <button
+        onClick={hideFormAndResetField}
+        className="toggle-button"
+      >
         {showCard ? "Hide Form" : "New Testimonial"}
       </button>
       {showCard && (
         <div className="new-testimonial-card">
-          <form onSubmit={handleSubmit} className="new-testimonial-form">
+          <form
+            onSubmit={handleSubmit}
+            className="new-testimonial-form"
+          >
             <div className="input-group">
               <input
                 type="text"
@@ -70,7 +76,10 @@ const NewTestimonialCard = () => {
               />
             </div>
             <div className="submit-btn">
-              <button type="submit" className="submit-button">
+              <button
+                type="submit"
+                className="submit-button"
+              >
                 Submit Testimonial
               </button>
             </div>

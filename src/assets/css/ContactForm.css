@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('path-to-your-background-image.jpg'); /* Update the path to your image */
+  background-image: url("path-to-your-background-image.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -41,7 +41,6 @@
   cursor: pointer;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   .contact-container,
   .contact-info-section,
@@ -52,14 +51,13 @@
   }
 }
 
-/* Additional responsive adjustments as needed */
 @media (max-width: 500px) {
   .contact-form-section,
   .contact-form {
     width: 100%;
   }
 
-  .contact-form textarea{
+  .contact-form textarea {
     min-height: 100px;
   }
 

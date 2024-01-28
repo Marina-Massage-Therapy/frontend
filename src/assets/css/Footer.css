@@ -46,7 +46,6 @@
   text-decoration: none;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .footer h2 {
     font-size: 2rem;
@@ -57,7 +56,6 @@
   .footer h2 {
     font-size: 1.5rem;
   }
-
   .footer p {
     font-size: 0.9rem;
   }

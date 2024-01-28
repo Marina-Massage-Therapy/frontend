@@ -1,9 +1,7 @@
-import { userReducer } from "../store/reducers/user.jsx";
 import { testimonialReducer } from "../store/reducers/testimonial.jsx";
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 
 const rootReducer = combineReducers({
-  userModule: userReducer,
   testimonialModule: testimonialReducer,
 });
 

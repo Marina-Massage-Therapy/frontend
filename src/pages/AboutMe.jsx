@@ -8,7 +8,6 @@ const AboutMe = () => {
     <div className="about-container">
       <div className="about-title">
         <p>Who am I? </p>
-        {/* <p>this is olia feature</p> */}
       </div>
 
       <div className="content-container">
@@ -48,7 +47,10 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="content-container-right">
-          <img src={Marina} alt="MarinaPic" />
+          <img
+            src={Marina}
+            alt="MarinaPic"
+          />
         </div>
       </div>
     </div>
