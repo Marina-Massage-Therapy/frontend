@@ -6,6 +6,7 @@ import {
   update_testimonial,
 } from "../store/actions/testimonial";
 import { useSelector } from "react-redux";
+import { t } from "i18next";
 
 const NewTestimonialCard = () => {
   const currentTestimonial = useSelector(
@@ -50,7 +51,9 @@ const NewTestimonialCard = () => {
         onClick={hideFormAndResetField}
         className="toggle-button"
       >
-        {showCard ? "Hide Form" : "New Testimonial"}
+        {showCard
+          ? t("cmps.newTestimonialCard.hideForm")
+          : t("cmps.newTestimonialCard.newTestimonial")}
       </button>
       {showCard && (
         <div className="new-testimonial-card">
@@ -61,7 +64,7 @@ const NewTestimonialCard = () => {
             <div className="input-group">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder={t("cmps.newTestimonialCard.fullname")}
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 required
@@ -69,7 +72,7 @@ const NewTestimonialCard = () => {
             </div>
             <div className="input-group">
               <textarea
-                placeholder="Message"
+                placeholder={t("cmps.newTestimonialCard.message")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
@@ -80,7 +83,7 @@ const NewTestimonialCard = () => {
                 type="submit"
                 className="submit-button"
               >
-                Submit Testimonial
+                {t("cmps.newTestimonialCard.submit")}
               </button>
             </div>
           </form>

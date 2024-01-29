@@ -2,7 +2,9 @@ import { NavLink, useLocation } from "react-router-dom";
 import "../assets/css/Header.css";
 import logo from "../assets/img/logo.svg";
 import { useState } from "react";
+import { t } from "i18next";
 import BurgerMenu from "./BurgerMenu";
+import SwitchLang from "./SwitchLang";
 
 const Header = ({ onChangeLang }) => {
   const location = useLocation();
@@ -32,10 +34,18 @@ const Header = ({ onChangeLang }) => {
   return (
     <div
       className="header"
-      style={{ backgroundColor: isHome ? "transparent" : "#f4f4f4" }}>
+      style={{ backgroundColor: isHome ? "transparent" : "#f4f4f4" }}
+    >
       <div className="header-content">
         <div className="header-left">
-          <img src={logo} alt="logo" />
+          <img
+            src={logo}
+            alt="logo"
+          />
+          <SwitchLang
+            isHeader
+            onChangeLang={onChangeLang}
+          />
         </div>
         <div className="header-right">
           {/* <BurgerMenu /> */}
@@ -43,26 +53,30 @@ const Header = ({ onChangeLang }) => {
             <NavLink
               to={"/home"}
               style={linkStyle("home")}
-              onClick={() => setMenuOpen(false)}>
-              HOME
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("cmps.header.home")}
             </NavLink>
             <NavLink
               to={"/about"}
               style={linkStyle("about")}
-              onClick={() => setMenuOpen(false)}>
-              ABOUT
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("cmps.header.about")}
             </NavLink>
             <NavLink
               to={"/massages"}
               style={linkStyle("massages")}
-              onClick={() => setMenuOpen(false)}>
-              MASSAGES
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("cmps.header.massages")}
             </NavLink>
             <NavLink
               to={"/testimonials"}
               style={linkStyle("testimonials")}
-              onClick={() => setMenuOpen(false)}>
-              TESTIMONIALS
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("cmps.header.testimonials")}
             </NavLink>
           </div>
         </div>
