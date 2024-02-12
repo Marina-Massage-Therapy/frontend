@@ -39,6 +39,9 @@
   height: 100px;
   overflow: hidden;
 }
+.text-right {
+  text-align: right;
+}
 .text::before {
   content: "";
   position: absolute;
@@ -83,4 +86,11 @@
 
 .see-more-btn > button:hover {
   color: #111;
+}
+
+@media (max-width: 500px) {
+  .text {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }

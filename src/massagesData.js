@@ -7,32 +7,32 @@ import sport1 from "../src/assets/img/sport1.jpg";
 export const massagesData = [
   {
     id: 1,
-    title: "Hote stone massage",
+    title: "pages.massages.hot_stone.title",
     imgURL: hotstone,
-    desc: "A type of massage therapy that involves the use of smooth, heated stones.Hot stone massage is often used to alleviate muscle tension and pain, making it beneficial for individuals with conditions such as arthritis or muscle injuries.he combination of heat and massage can have a calming effect on the nervous system, helping to reduce stress and anxiety.",
+    desc: "pages.massages.hot_stone.desc",
   },
   {
     id: 2,
-    title: "Deep Tissue massage",
+    title: "pages.massages.deep_tissue.title",
     imgURL: deeptissue,
-    desc: "A therapeutic massage technique that focuses on reaching the deeper layers of muscles and connective tissues.This type of massage is designed to address chronic pain, muscle tension, and stiffness. Unlike relaxation massages that primarily target the superficial layers of muscles, deep tissue massage involves applying firm pressure and slow strokes to target specific areas of tension and discomfort.",
+    desc: "pages.massages.deep_tissue.desc",
   },
   {
     id: 3,
-    title: "Swedish classic massage",
+    title: "pages.massages.swedish_classic.title",
     imgURL: swedish,
-    desc: "A type of massage therapy that involves the use of smooth, heated stones.Hot stone massage is often used to alleviate muscle tension and pain, making it beneficial for individuals with conditions such as arthritis or muscle injuries.he combination of heat and massage can have a calming effect on the nervous system, helping to reduce stress and anxiety.Swedish massage is known for its gentle and soothing nature, making it an excellent choice for individuals seeking relaxation and stress relief. It is often recommended for those who are new to massage or who prefer a lighter touch.",
+    desc: "pages.massages.swedish_classic.desc",
   },
   {
     id: 4,
-    title: "Reflexology massage",
+    title: "pages.massages.reflexology.title",
     imgURL: reflexology,
-    desc: "Reflexology is known for its relaxing effects. The pressure applied to the reflex points stimulates nerve endings, promoting a sense of relaxation and reducing stress.Reflexology involves the stimulation of thousands of nerve endings in the hands, feet, or ears. This stimulation is believed to have a positive impact on the central nervous system, influencing various bodily functions.",
+    desc: "pages.massages.reflexology.desc",
   },
   {
     id: 5,
-    title: "Sport massage",
+    title: "pages.massages.sport_massage.title",
     imgURL: sport1,
-    desc: "A type of massage therapy that involves the use of smooth, heated stones.Hot stone massage is often used to alleviate muscle tension and pain, making it beneficial for individuals with conditions such as arthritis or muscle injuries.he combination of heat and massage can have a calming effect on the nervous system, helping to reduce stress and anxiety.",
+    desc: "pages.massages.sport_massage.desc",
   },
 ];

@@ -27,10 +27,10 @@ const Massages = () => {
           {massagesData.map(({ id, title, imgURL, desc }) => (
             <Card
               key={title}
-              title={title}
+              titleKey={title}
               id={id}
               imgURL={imgURL}
-              desc={desc}
+              descKey={desc}
             />
           ))}
         </div>

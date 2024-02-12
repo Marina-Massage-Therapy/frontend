@@ -68,6 +68,13 @@
   }
 
   .overlay-text {
-    top: 50px;
+    top: 70px;
+  }
+  .overlay-text h1 {
+    font-size: 25px;
+  }
+
+  .overlay-text h4 {
+    font-size: 15px;
   }
 }
