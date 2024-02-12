@@ -1,15 +1,18 @@
-import Background from "../assets/img/background.png";
 import "../assets/css/HomeTopSection.css";
 import { t } from "i18next";
+import Background from "../assets/img/background.png";
+import stoneBackground from "../assets/img/stoneBackground.jpg";
+import deepBackground from "../assets/img/deepBackground.jpg";
+import sport from "../assets/img/sport.jpg";
+import Carousel from "./Carousel";
+
+const IMAGES = [Background, stoneBackground, deepBackground, sport];
 
 const HomeTopSection = () => {
   return (
     <div className="background-photo">
-      <img
-        src={Background}
-        alt="backgroundPic"
-        style={{ opacity: 0.7 }}
-      />
+      <Carousel imageUrls={IMAGES} />
+
       <div className="overlay-text">
         <h1>{t("cmps.homeTopSection.title")}</h1>
         <h4>{t("cmps.homeTopSection.subtitle")}</h4>

@@ -1,28 +1,37 @@
-import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import React from "react";
 import "../assets/css/AboutMe.css";
-import Marina from "../assets/img/marina.jpg";
+import Marina4 from "../assets/img/marina4.jpg";
 import { t } from "i18next";
+import aboutBackground from "../assets/img/aboutBackground.jpg";
 
 const AboutMe = () => {
   return (
     <div className="about-container">
+      <div className="about-background">
+        <img
+          src={aboutBackground}
+          alt=""
+        />
+      </div>
       <div className="about-title">
-        <p>{t("pages.about.title")} </p>
+        <h1>{t("pages.about.title")}</h1>
       </div>
 
       <div className="content-container">
-        <div className="content-container-left">
-          <p>{t("pages.about.p1")}</p>
-          <p>{t("pages.about.p2")}</p>
-          <p>{t("pages.about.p3")}</p>
-          <p>{t("pages.about.p4")}</p>
-        </div>
-        <div className="content-container-right">
-          <img
-            src={Marina}
-            alt="MarinaPic"
-          />
+        <h2>{t("pages.about.subtitle")}</h2>
+        <div className="content-container-inner">
+          <div className="content-container-left">
+            <p>{t("pages.about.p1")}</p>
+            <p>{t("pages.about.p2")}</p>
+            <p>{t("pages.about.p3")}</p>
+            <p>{t("pages.about.p4")}</p>
+          </div>
+          <div className="content-container-right">
+            <img
+              src={Marina4}
+              alt="MarinaPic"
+            />
+          </div>
         </div>
       </div>
     </div>

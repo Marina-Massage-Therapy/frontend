@@ -8,12 +8,12 @@ i18n
 
   .init({
     debug: true,
-    fallbackLng: "he",
+    fallbackLng: "English",
     interpolation: {
       escapeValue: false,
     },
     resources: {
-      en: {
+      English: {
         translation: {
           cmps: {
             contactForm: {
@@ -61,7 +61,8 @@ i18n
 
           pages: {
             about: {
-              title: "Who am I?",
+              title: "About Me",
+              subtitle: "Who am I?",
               p1: `As an accomplished graduate of Wingate Institute with 13 years
               of experience in massage practice, I bring a profound
               understanding of diverse massage techniques. My treatment
@@ -90,15 +91,38 @@ i18n
               massage therapy into your routine.`,
             },
             massages: {
-              title: "Massages are",
+              title: "Massages",
+              subtitle: "Take a Moment For Yourself",
+              techniques: "My Techniques",
+              hot_stone: {
+                title: "Hot Stone Massage",
+                desc: "A type of massage therapy that involves the use of smooth, heated stones.Hot stone massage is often used to alleviate muscle tension and pain, making it beneficial for individuals with conditions such as arthritis or muscle injuries.he combination of heat and massage can have a calming effect on the nervous system, helping to reduce stress and anxiety.",
+              },
+              deep_tissue: {
+                title: "Deep tissue massage",
+                desc: "A therapeutic massage technique that focuses on reaching the deeper layers of muscles and connective tissues.This type of massage is designed to address chronic pain, muscle tension, and stiffness. Unlike relaxation massages that primarily target the superficial layers of muscles, deep tissue massage involves applying firm pressure and slow strokes to target specific areas of tension and discomfort.",
+              },
+              swedish_classic: {
+                title: "Swedish classic massage",
+                desc: "The Swedish massage is perhaps the best-known massage treatment in the world. A  type of massage therapy that involves various techniques aimed at easing muscle tension and improving the joint range of motion. It involves the use of hands, forearms, or elbows to manipulate the superficial layers of the muscles to improve mental and physical health.",
+              },
+              reflexology: {
+                title: "Reflexology massage",
+                desc: "Reflexology massage is known for its relaxing effects. The pressure applied to the reflex points stimulates nerve endings, promoting a sense of relaxation and reducing stress.Reflexology involves the stimulation of thousands of nerve endings in the feet. This stimulation is believed to have a positive impact on the central nervous system, influencing various bodily functions.",
+              },
+              sport_massage: {
+                title: "Sport massage",
+                desc: "Sport massage is a specialized form of massage therapy primarily aimed at athletes and individuals engaged in regular physical activity. Its purpose is to enhance athletic performance, aid in recovery from intense training, and prevent or treat sports-related injuries. After intense physical activity, sport massage can aid in the recovery process by promoting the removal of metabolic waste products such as lactic acid, reducing muscle soreness, and facilitating tissue repair.",
+              },
             },
             testimonials: {
-              title: "What My Clients Say",
+              title: "Testimonials",
+              subtitle: "What My Clients Say",
             },
           },
         },
       },
-      he: {
+      Hebrew: {
         translation: {
           cmps: {
             contactForm: {
@@ -138,7 +162,8 @@ i18n
 
           pages: {
             about: {
-              title: "? מי אני",
+              title: "אודותי",
+              subtitle: "? מי אני",
               p1: `כבוגרת מיומנת של מכון וינגייט עם 13 שנות ניסיון בתחום עיסוי, אני מביא הבנה עמוקה של טכניקות עיסוי מגוונות. שיטות הטיפול שלי נועדו להקל במיומנות על כאב כרוני, להציע הקלה לשרירים עייפים וכואבים לגרום למצב עמוק של הרפיה בגוף, ולטפח תחושת רוגע עמוקה במערכת העצבים. אני מחויבת להעניק חוויה טיפולית התורמת לרווחתם הכללית של לקוחותיי, בהסתמך על הידע הרב שלי ומחויבותי למצוינות בתחום הטיפול בעיסוי.`,
               p2: `במהלך העיסוי, אני פועלת לשיפור הרווחה הכללית שלך על ידי התייחסות להיבטים שונים של הגוף . בראש ובראשונה, עיסוי ממריץ זרימת דם טובה יותר. כאשר אני משתמשת בטכניקות שונות, כלי הדם מתרחבים, ומאפשרים ליותר חמצן וחומרי תזונה חיוניים להגיע לשרירים שלך. זרימת דם משופרת זו מסייעת להתאוששות וגמישות השרירים.`,
               p3: `כאשר אני אעבוד על שריריך, סביר להניח שתבחין בשחרור של המטח במהלך הטיפול. שחרור זה הכרחי להרפיית שרירים.  הגוף מגיב לעיסוי על ידי שחרור אנדרופינים, משפרי מצב הרוח הטבעיים ומשכחי כאבים. זו הסיבה שהלקוחות שלי חווים לא רק מתחושת הקלה פיסית אלה גם נפשית במהלך ולאחר הטיפול. `,
@@ -146,14 +171,37 @@ i18n
             },
             massages: {
               title: "סוגי טיפולים",
+              subtitle: "קחו רגע לעצמכם",
+              techniques: "הטכניקות שליי",
+              hot_stone: {
+                title: "עיסוי אבנים חמות",
+                desc: "העיסוי מתבצע באבנים חלקות ומחוממות. עיסוי זה משמש להקלה על מתח וכאבי שרירים, מה שהופך אותו למועיל במיוחד עבור אנשים הסובלים מדלקת פרקים או מפציעות בשרירים. השילוב של חום ועיסוי גורם להרגעה על מערכת העצבים ועוזר להפחית מתח וחרדה.",
+              },
+              deep_tissue: {
+                title: "עיסוי רקמות עמוק",
+                desc: "טכניקת עיסוי טיפולית המתמקדת בהגעה לשכבות העמוקות יותר של השרירים ורקמות החיבור של הגוף. סוג זה של עיסוי נועד לתת מענה לכאבים כרוניים, ותחושת מתח בשרירים . בניגוד לעיסויי ריפיון ושחרור  שרירים כללי אשר בעיקר מיועד לשכבות השטחיות של השרירים, עיסוי רקמות עמוק כולל הפעלת לחץ חזק ומשיכות איטיות על מנת להתמקד יותר באזורים ספציפיים של המתח והאי נוחות.",
+              },
+              swedish_classic: {
+                title: "עיסוי שוודי קלאסי",
+                desc: "העיסוי השוודי הוא אולי טיפול העיסוי המוכר ביותר בעולם. העיסוי כולל טכניקות שונות שמטרתן להקל על מתח השרירים ולשפר את טווח התנועה של המפרקים. עיסוי שוודי קלאסי מתבצע תוך כדי  שימוש בידיים, אמות או מרפקים וזאת על מנת לתמרן את השכבות השטחיות של השרירים במטרה להגברת כח השרירים והפחתת תחושת עייפות השרירים.",
+              },
+              reflexology: {
+                title: "עיסוי רפלקסולוגיה",
+                desc: "רפלקסולוגיה או עיסוי בכפות ברגליים ידועה בהשפעותיה המרגיעות. הלחץ המופעל על נקודות הרפלקס מגרה את קצות העצבים, מקדם תחושת רגיעה ומפחית תחושת מתח בגוף. רפלקסולוגיה כוללת גירוי של אלפי קצות עצבים בכפות הרגליים ברגליים . לעיסוי  זה יש השפעה חיובית על מערכת העצבים המרכזית, המשפיעה על תפקודי גוף שונים.",
+              },
+              sport_massage: {
+                title: "עיסוי ספורטאים",
+                desc: "עיסוי ספורט הוא סוג מיוחד של טיפול עיסוי המכוון בעיקר לספורטאים ולאנשים העוסקים בפעילות גופנית סדירה. מטרתו לשפר את הביצועים האתלטיים, לסייע בהתאוששות מאימון אינטנסיבי ולמנוע או לטפל בפציעות הקשורות לספורט. לאחר פעילות גופנית אינטנסיבית, עיסוי ספורטיבי יכול לסייע בתהליך ההתאוששות על ידי קידום פינוי של חומרי פסולת מטבוליים כגון חומצה לקטית, הפחתת כאבי שרירים והקלה בתיקון רקמות.",
+              },
             },
             testimonials: {
-              title: "מה הלקוחות שלי אומרים עלי",
+              title: "המלצות",
+              subtitle: "מה הלקוחות שלי אומרים עלי",
             },
           },
         },
       },
-      ru: {
+      Russian: {
         translation: {
           cmps: {
             contactForm: {
@@ -176,11 +224,11 @@ i18n
                 "Ваше благосостояние - центр моего внимания, и ваш путь к балансу и снятию напряжения начинается прямо сейчас.",
             },
             newTestimonialCard: {
-              hideForm: "HIDE FORM",
-              newTestimonial: "NEW TESTIMONIAL",
-              fullname: "Full Name",
-              message: "Message",
-              submit: "SUBMIT TESTIMONIAL",
+              hideForm: "СКРЫТЬ",
+              newTestimonial: "НОВЫЙ ОТЗЫВ",
+              fullname: "Полное Имя",
+              message: "Ваш Отзыв",
+              submit: "ОСТАВИТЬ ОТЗЫВ",
             },
             welcome: {
               welcomeTitle: "Добро пожаловать",
@@ -193,7 +241,8 @@ i18n
 
           pages: {
             about: {
-              title: "Кто я?",
+              title: "Обо Мне",
+              subtitle: "Кто я?",
               p1: `Будучи дипломированным выпускником Института Вингейта с 13-летним опытом массажной практики, я обладаю глубоким пониманием различных техник массажа. Мои методы созданы для того, чтобы умело облегчить хроническую боль, облегчить усталость и боль в мышцах, вызвать состояние глубокого расслабления в теле и способствовать глубокому ощущению спокойствия в нервной системе. Я посвящаю себя предоставлению терапевтического опыта, который способствует общему благополучию моих клиентов, опираясь на свои обширные знания и стремление к совершенству в области массажной терапии.`,
               p2: `Во время сеанса массажа я работаю над улучшением вашего общего самочувствия, воздействуя на различные аспекты вашего тела. Прежде всего, массаж стимулирует лучшее кровообращение. Когда я использую различные техники, кровеносные сосуды расширяются, позволяя большему количеству кислорода и необходимых питательных веществ достичь мышц. Улучшение кровообращения способствует восстановлению мышц и повышению их гибкости.`,
               p3: `Когда я буду работать над вашими мышцами, вы, вероятно, заметите снижение напряжения. Это имеет решающее значение для уменьшения стеснения и содействия расслаблению. Тело реагирует на массаж выбросом эндорфинов, естественных усилителей настроения и обезболивающих. Именно поэтому мои клиенты испытывают не только физическое, но и психическое расслабление во время и после сеанса.`,
@@ -201,9 +250,32 @@ i18n
             },
             massages: {
               title: "Все массажи",
+              subtitle: "Найдите минутку для себя",
+              techniques: "Мои техники",
+              hot_stone: {
+                title: "Массаж горячими камнями",
+                desc: "Вид массажной терапии, включающий использование гладких нагретых камней. Массаж горячими камнями часто используется для облегчения мышечного напряжения и боли, что делает его полезным для людей с такими заболеваниями, как артрит или мышечные травмы. Сочетание тепла и массажа может иметь успокаивающее действие на нервную систему, способствуя снижению стресса и беспокойства.",
+              },
+              deep_tissue: {
+                title: "Глубокий массаж тканей",
+                desc: "Техника терапевтического массажа, направленная на воздействие на более глубокие слои мышц и соединительных тканей. Этот вид массажа предназначен для устранения хронической боли, мышечного напряжения и скованности. В отличие от расслабляющего массажа, который в первую очередь нацелен на поверхностные слои мышц, массаж глубоких тканей включает в себя сильное давление и медленные поглаживания для воздействия на определенные области напряжения и дискомфорта.",
+              },
+              swedish_classic: {
+                title: "Шведский классический массаж",
+                desc: "Шведский массаж, пожалуй, самая известная массажная процедура в мире. Вид массажной терапии, включающий в себя различные приемы, направленные на ослабление мышечного напряжения и улучшение объема движений суставов. Он предполагает использование рук, предплечий или локтей для манипулирования поверхностными слоями мышц с целью улучшения психического и физического здоровья.",
+              },
+              reflexology: {
+                title: "Массаж ног",
+                desc: "Массаж ног известен своим расслабляющим эффектом. Давление на рефлекторные точки стимулирует нервные окончания, вызывая чувство расслабления и снижая стресс. Рефлексология предполагает стимуляцию тысяч нервных окончаний стоп. Считается, что эта стимуляция оказывает положительное влияние на центральную нервную систему, влияя на различные функции организма.",
+              },
+              sport_massage: {
+                title: "Спортивный массаж",
+                desc: "Cпециализированная форма массажной терапии, предназначенная в первую очередь для спортсменов и людей, регулярно занимающихся физической активностью. Его цель улучшить спортивные результаты, помочь в восстановлении после интенсивных тренировок, а также предотвратить или лечить травмы, связанные со спортом. После интенсивной физической активности спортивный массаж может помочь в процессе восстановления, способствуя выведению продуктов метаболизма, таких как молочная кислота, уменьшая болезненность мышц и способствуя восстановлению тканей.",
+              },
             },
             testimonials: {
-              title: "Что говорят мои клиенты",
+              title: "Отзывы",
+              subtitle: "Что говорят мои клиенты",
             },
           },
         },

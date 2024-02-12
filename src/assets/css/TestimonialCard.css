@@ -1,41 +1,40 @@
 .testimonial-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-    max-width: 250px; /* Adjust the width as per your layout */
-    min-width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .testimonial-message {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-footer {
-    text-align: center;
-  }
-  
-  .testimonial-name {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .testimonial-rating span {
-    color: #ffd700; /* Gold color for stars */
-  }
-  
-  /* Responsive adjustments */
-  /* @media (max-width: 600px) {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 250px;
+  min-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-message {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-footer {
+  text-align: center;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.testimonial-rating span {
+  color: #ffd700; /* Gold color for stars */
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 600px) {
  
   } */
-  

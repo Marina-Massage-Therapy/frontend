@@ -53,20 +53,20 @@ const ContactForm = () => {
         />
         <input
           type="email"
-          name="user_email" // Match the name attribute to your EmailJS template
+          name="user_email"
           placeholder={t("cmps.contactForm.email")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="tel"
-          name="user_telephone" // Add the name attribute for the telephone
+          name="user_telephone"
           placeholder={t("cmps.contactForm.telephone")}
           value={telephone}
           onChange={(e) => setTelephone(e.target.value)}
         />
         <textarea
-          name="user_comment" // Add the name attribute for the comment
+          name="user_comment"
           placeholder={t("cmps.contactForm.message")}
           value={comment}
           onChange={(e) => setComment(e.target.value)}

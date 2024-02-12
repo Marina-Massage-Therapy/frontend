@@ -1,75 +1,76 @@
 .welcome-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 50px;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  
-  .title-wrap {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .title-wrap > h6 {
-    margin: 0;
-    font-size: 17px;
-    text-align: center;
-  }
-  
-  .title-wrap > h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .content-wrap {
-    margin: 30px 0 45px;
-    padding: 0 15px;
-    text-align: center;
-    overflow-wrap: break-word;
-  }
-  
-  .content-wrap > p {
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .read-more-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .read-more-btn > button {
-    background-image: linear-gradient(
-      to right,
-      #da22ff 0%,
-      #9733ee 51%,
-      #da22ff 100%
-    );
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-  }
-  
-  .read-more-btn > button:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.title-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.title-wrap > h6 {
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.title-wrap > h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-wrap {
+  margin: 30px 0 45px;
+  padding: 0 15px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.content-wrap > p {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.read-more-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.read-more-btn > button {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.read-more-btn > button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

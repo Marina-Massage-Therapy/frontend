@@ -1,73 +1,107 @@
-import React, { useState } from "react";
-import IlSvg from "../assets/icons/IL.svg";
-import EnSvg from "../assets/icons/EN.svg";
-import RuSvg from "../assets/icons/RU.svg";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Button,
-  Flex,
-} from "@chakra-ui/react";
+// import React, { useState } from "react";
+// import IlSvg from "../assets/icons/IL.svg";
+// import EnSvg from "../assets/icons/EN.svg";
+// import RuSvg from "../assets/icons/RU.svg";
+// import { ChevronDownIcon } from "@chakra-ui/icons";
+// import "../assets/css/SwitchLang.css";
 
-const SwitchLang = ({ onChangeLang, isHeader }) => {
-  const [currFlag, setCurrFlag] = useState(EnSvg);
+// const SwitchLang = ({ onChangeLang }) => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [currFlag, setCurrFlag] = useState(EnSvg);
+
+//   const onToggleLang = (lng) => {
+//     onChangeLang(lng);
+//     onMatchFlag(lng);
+//     setIsOpen(false);
+//   };
+
+//   const onMatchFlag = (lng) => {
+//     if (lng === "en") setCurrFlag(EnSvg);
+//     else if (lng === "he") setCurrFlag(IlSvg);
+//     else setCurrFlag(RuSvg);
+//   };
+
+//   const toggleMenu = () => {
+//     setIsOpen(!isOpen);
+//   };
+
+//   return (
+//     <div className="language-switch-menu">
+//       <div
+//         className="language-switch-button"
+//         onClick={toggleMenu}
+//       >
+//         <img
+//           src={currFlag}
+//           alt="Flag"
+//         />
+//         <ChevronDownIcon />
+//       </div>
+
+//       {isOpen && (
+//         <div className={`language-switch-menu ${isOpen ? "show" : ""}`}>
+//           <div onClick={() => onToggleLang("he")}>
+//             <img
+//               src={IlSvg}
+//               alt="Hebrew Flag"
+//             />
+//           </div>
+//           <div onClick={() => onToggleLang("en")}>
+//             <img
+//               src={EnSvg}
+//               alt="English Flag"
+//             />
+//           </div>
+//           <div onClick={() => onToggleLang("ru")}>
+//             <img
+//               src={RuSvg}
+//               alt="Russian Flag"
+//             />
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default SwitchLang;
+
+import React, { useState } from "react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import "../assets/css/SwitchLang.css";
+
+const SwitchLang = ({ onChangeLang }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currLang, setCurrLang] = useState("English");
 
   const onToggleLang = (lng) => {
     onChangeLang(lng);
-    onMatchFlag(lng);
+    setCurrLang(lng);
+    setIsOpen(false);
   };
 
-  const onMatchFlag = (lng) => {
-    if (lng === "en") setCurrFlag(EnSvg);
-    else if (lng === "he") setCurrFlag(IlSvg);
-    else setCurrFlag(RuSvg);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <Menu _hover={{ bg: "transparent" }}>
-      <MenuButton
-        display={{ base: "flex", md: isHeader ? "flex" : "none" }}
-        as={Button}
-        rightIcon={<ChevronDownIcon />}
-        bg="transparent"
-        _hover={{ bg: "transparent" }}
-        _active={{ bg: "transparent" }}
+    <div className="language-switch-menu">
+      <div
+        className="language-switch-button"
+        onClick={toggleMenu}
       >
-        <img
-          src={currFlag}
-          alt="Flag"
-        />
-      </MenuButton>
+        <span>{currLang}</span>
+        <ChevronDownIcon />
+      </div>
 
-      <MenuList
-        as={Flex}
-        direction="column"
-        align="center"
-        zIndex="2"
-      >
-        <MenuItem onClick={() => onToggleLang("he")}>
-          <img
-            src={IlSvg}
-            alt="Hebrew Flag"
-          />
-        </MenuItem>
-        <MenuItem onClick={() => onToggleLang("en")}>
-          <img
-            src={EnSvg}
-            alt="English Flag"
-          />
-        </MenuItem>
-        <MenuItem onClick={() => onToggleLang("ru")}>
-          <img
-            src={RuSvg}
-            alt="Russian Flag"
-          />
-        </MenuItem>
-      </MenuList>
-    </Menu>
+      {isOpen && (
+        <div className={`language-switch-menu ${isOpen ? "show" : ""}`}>
+          <div onClick={() => onToggleLang("Hebrew")}>Hebrew</div>
+          <div onClick={() => onToggleLang("English")}>English</div>
+          <div onClick={() => onToggleLang("Russian")}>Russian</div>
+        </div>
+      )}
+    </div>
   );
 };
 

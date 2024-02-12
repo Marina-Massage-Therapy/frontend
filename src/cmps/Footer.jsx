@@ -9,6 +9,7 @@ const Footer = ({ backgroundImage, phoneNumber }) => {
     >
       <div className="footer-content">
         <ContactForm />
+        <h4>©2024 Marina Massage Therapist. All Rights Reserved.</h4>
       </div>
     </footer>
   );

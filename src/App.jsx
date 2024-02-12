@@ -13,6 +13,8 @@ import { fetch_testimonial } from "./store/actions/testimonial";
 import { useTranslation } from "react-i18next";
 import SwitchLang from "./cmps/SwitchLang";
 
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   const { i18n } = useTranslation();
   const lng = navigator.language;
@@ -31,6 +33,7 @@ function App() {
         <Box>
           <Header onChangeLang={onChangeLang} />
         </Box>
+
         <Routes>
           <Route
             path="/"

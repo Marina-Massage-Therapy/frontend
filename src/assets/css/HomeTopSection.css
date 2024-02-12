@@ -1,74 +1,73 @@
 .background-photo {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100vh; /* Adjust the height as needed for your design */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* This ensures no scrollbars appear if the image is larger than the view */
-  }
-  
-  .background-photo img {
-    /* Set to cover the parent element fully and be responsive */
-    max-width: 100%;
-    min-width: 100%;
-    height: 100vh;
-    opacity: 0.8; /* Set the opacity for the image */
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 100px; /* Adjust as needed for positioning */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the content horizontally */
-    color: #fff;
-    text-align: center;
-    z-index: 2; /* Ensures the text is above the background image */
-  }
-  
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-photo img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  /* max-height: 100%; */
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  margin: 0 0 20px 0;
+}
+
+.overlay-text h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
   .overlay-text h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 65px; /* Adjust as needed for responsive design */
-    margin: 0 0 20px 0; /* Spacing below the h1 */
+    font-size: 40px;
   }
-  
+
   .overlay-text h4 {
-    font-family: "Playfair Display", serif;
-    font-size: 25px;
-    margin: 0; /* Removes the default margin for consistency */
+    font-size: 20px;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 1000px) {
-    .overlay-text h1 {
-      font-size: 40px; /* Smaller font size for smaller screens */
-    }
-    
-    .overlay-text h4 {
-      font-size: 20px; /* Smaller font size for h4 as well */
-    }
+}
+
+@media (max-width: 768px) {
+  .overlay-text h1,
+  .overlay-text h4 {
+    padding: 0 10px;
   }
-  
-  @media (max-width: 768px) {
-    .overlay-text h1,
-    .overlay-text h4 {
-      padding: 0 10px; /* Add padding for smaller screens */
-    }
+}
+
+@media (max-width: 500px) {
+  .background-photo {
+    height: auto;
   }
-  
-  @media (max-width: 500px) {
-    .background-photo {
-      height: auto; /* Adjust height for mobile devices */
-    }
-  
-    .background-photo img {
-      width: 100%;
-      height: 60vh; /* Make image responsive for mobile */
-    }
-  
-    .overlay-text {
-      top: 50px; /* Adjust top position for mobile */
-    }
+
+  .background-photo img {
+    width: 100%;
+    height: 60vh;
   }
-  
+
+  .overlay-text {
+    top: 50px;
+  }
+}

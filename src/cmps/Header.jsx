@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import "../assets/css/Header.css";
-import logo from "../assets/img/logo.svg";
+import logo18 from "../assets/img/logo18.png";
 import { useState } from "react";
 import { t } from "i18next";
 import BurgerMenu from "./BurgerMenu";
@@ -39,16 +39,14 @@ const Header = ({ onChangeLang }) => {
       <div className="header-content">
         <div className="header-left">
           <img
-            src={logo}
+            src={logo18}
             alt="logo"
+            style={{ objectFit: "cover" }}
           />
-          <SwitchLang
-            isHeader
-            onChangeLang={onChangeLang}
-          />
+          <SwitchLang onChangeLang={onChangeLang} />
         </div>
         <div className="header-right">
-          {/* <BurgerMenu /> */}
+          <BurgerMenu />
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
             <NavLink
               to={"/home"}

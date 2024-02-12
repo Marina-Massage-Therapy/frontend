@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { store } from "./store/store";
 import "./i18n";
 // const initialLanguage = i18n.language || "en";
-import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
