@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/AboutMe.css";
-import Marina4 from "../assets/img/marina4.jpg";
+import Marina4 from "../assets/img/Marina4.jpg";
 import { t } from "i18next";
 import aboutBackground from "../assets/img/aboutBackground.jpg";
 
