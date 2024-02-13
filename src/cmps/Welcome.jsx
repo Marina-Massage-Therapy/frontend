@@ -1,11 +1,11 @@
 import React from "react";
 import "../assets/css/Welcome.css";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Importing useTranslation hook
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation(); // Accessing the t function and i18n object
+  const { t, i18n } = useTranslation();
 
   // Conditionally determine text alignment class based on current language
   const textAlignmentClass =

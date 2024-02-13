@@ -2,15 +2,19 @@ import { NavLink, useLocation } from "react-router-dom";
 import "../assets/css/Header.css";
 import logo18 from "../assets/img/logo18.png";
 import { useState } from "react";
-import { t } from "i18next";
+// import { t } from "i18next";
 import BurgerMenu from "./BurgerMenu";
 import SwitchLang from "./SwitchLang";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ onChangeLang }) => {
   const location = useLocation();
   const isHome = location.pathname === "/home" || location.pathname === "/";
   const [hoverLink, setHoverLink] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const fontSizeClass = i18n.language === "Hebrew" ? "hebrew-nav-links" : "";
 
   const toggleHover = (linkName) => {
     setHoverLink(linkName);
@@ -47,7 +51,9 @@ const Header = ({ onChangeLang }) => {
         </div>
         <div className="header-right">
           <BurgerMenu />
-          <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <div
+            className={`nav-links ${menuOpen ? "open" : ""} ${fontSizeClass}`}
+          >
             <NavLink
               to={"/home"}
               style={linkStyle("home")}
