@@ -9,7 +9,13 @@ import { useTranslation } from "react-i18next";
 
 const Header = ({ onChangeLang }) => {
   const location = useLocation();
-  const isHome = location.pathname === "/home" || location.pathname === "/";
+  // const isHome = location.pathname === "/home" || location.pathname === "/";
+
+  const isHome =
+    location.pathname.endsWith("/home") ||
+    location.pathname === "/" ||
+    location.pathname.endsWith(".com");
+
   const [hoverLink, setHoverLink] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
