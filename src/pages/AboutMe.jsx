@@ -1,14 +1,12 @@
 import React from "react";
 import "../assets/css/AboutMe.css";
 import { useTranslation } from "react-i18next";
-
 import Marina4 from "../assets/img/Marina4.jpg";
 import aboutBackground from "../assets/img/aboutBackground.jpg";
 
 const AboutMe = () => {
   const { t, i18n } = useTranslation();
 
-  // Conditionally determine text alignment class based on current language
   const textAlignmentClass = i18n.language === "Hebrew" ? "text-right" : "";
 
   return (

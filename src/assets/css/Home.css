@@ -3,7 +3,6 @@
   flex-direction: column;
 }
 
-/* Global button styling can remain if it's used in other components like Massages and Testimonials */
 button {
   background-image: linear-gradient(
     to right,

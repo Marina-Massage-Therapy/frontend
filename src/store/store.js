@@ -5,18 +5,13 @@ const rootReducer = combineReducers({
   testimonialModule: testimonialReducer,
 });
 
-// Enhancers including the Redux DevTools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const middleware = []; // Add any middleware here
+const middleware = [];
 
 export const store = createStore(
   rootReducer,
   composeEnhancers(applyMiddleware(...middleware))
 );
 
-store.subscribe(() => {
-  // console.log('** Store state changed: **');
-  // console.log('storeState:\n', store.getState());
-  // console.log('***********');
-});
+store.subscribe(() => {});

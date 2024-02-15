@@ -13,8 +13,6 @@ import { fetch_testimonial } from "./store/actions/testimonial";
 import { useTranslation } from "react-i18next";
 import SwitchLang from "./cmps/SwitchLang";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
-
 function App() {
   const { i18n } = useTranslation();
   const lng = navigator.language;
@@ -58,7 +56,7 @@ function App() {
         </Routes>
         <Footer
           backgroundImage={footerBackground}
-          phoneNumber="+1 910-626-8525"
+          phoneNumber="0523910037"
         />
       </Box>
     </div>

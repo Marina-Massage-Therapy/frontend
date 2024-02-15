@@ -7,7 +7,6 @@ const Welcome = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
-  // Conditionally determine text alignment class based on current language
   const textAlignmentClass =
     i18n.language === "Hebrew" ? "text-right" : "text-left";
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../assets/css/Card.css";
-import { useTranslation } from "react-i18next"; // Importing only useTranslation
+import { useTranslation } from "react-i18next";
 
 const Card = ({ imgURL, titleKey, descKey }) => {
-  const { t, i18n } = useTranslation(); // Accessing the t function through useTranslation
+  const { t, i18n } = useTranslation();
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {

@@ -2,14 +2,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import "../assets/css/Header.css";
 import logo18 from "../assets/img/logo18.png";
 import { useState } from "react";
-// import { t } from "i18next";
 import BurgerMenu from "./BurgerMenu";
 import SwitchLang from "./SwitchLang";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ onChangeLang }) => {
   const location = useLocation();
-  // const isHome = location.pathname === "/home" || location.pathname === "/";
 
   const isHome =
     location.pathname.endsWith("/home") ||

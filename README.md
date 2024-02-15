@@ -1,8 +1,18 @@
-# React + Vite
+Marina Massage Therapy Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies :
+Frontend - React.js
+Styling- Cascading Style Sheets(CSS)
+State-management: Redux
+DB - Mongo DB
+Lucide React Icon Library
+Frontend Hosting - AWS Amplify Hosting
+Backend - Node.js
+Backend Server - Render.com
+Server - Express.js
+Context API - State management
 
-Currently, two official plugins are available:
+<!-- Deployed app - https://linkedin-clone-7bf6b.firebaseapp.com/ -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](https://github.com/Marina-Massage-Therapy/frontend/tree/main/src/assets/img/screen1.JPG)
+![alt text](hhttps://github.com/Marina-Massage-Therapy/frontend/tree/main/src/assets/img/screen.JPG)

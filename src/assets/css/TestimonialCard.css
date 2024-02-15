@@ -31,10 +31,5 @@
 }
 
 .testimonial-rating span {
-  color: #ffd700; /* Gold color for stars */
+  color: #ffd700;
 }
-
-/* Responsive adjustments */
-/* @media (max-width: 600px) {
- 
-  } */

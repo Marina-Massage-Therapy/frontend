@@ -28,7 +28,6 @@
 
 .about-title {
   top: 150px;
-  /* left: 10%; */
   text-align: left;
   padding-top: 20px;
   font-size: 20px;
@@ -164,7 +163,6 @@
     text-align: left;
   }
   .about-title {
-    /* top: 140px; */
     font-size: 50px;
   }
 
