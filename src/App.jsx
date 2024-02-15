@@ -11,7 +11,6 @@ import Footer from "./cmps/Footer";
 import { useEffect } from "react";
 import { fetch_testimonial } from "./store/actions/testimonial";
 import { useTranslation } from "react-i18next";
-import SwitchLang from "./cmps/SwitchLang";
 
 function App() {
   const { i18n } = useTranslation();
