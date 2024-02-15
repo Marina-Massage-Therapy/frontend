@@ -12,7 +12,7 @@ Backend Server - Render.com
 Server - Express.js
 Context API - State management
 
-<!-- Deployed app - https://linkedin-clone-7bf6b.firebaseapp.com/ -->
+Deployed app - https://main.d2tvvv5hcr4651.amplifyapp.com/
 
-![alt text](https://github.com/Marina-Massage-Therapy/frontend/tree/main/src/assets/img/screen1.JPG)
-![alt text](hhttps://github.com/Marina-Massage-Therapy/frontend/tree/main/src/assets/img/screen.JPG)
+![alt text](https://github.com/Marina-Massage-Therapy/frontend/blob/main/src/assets/img/screen1.jpg)
+![alt text](https://github.com/Marina-Massage-Therapy/frontend/blob/main/src/assets/img/sceen.jpg)
