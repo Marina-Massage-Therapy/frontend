@@ -23,6 +23,7 @@ i18n
               telephone: "Telephone",
               message: "Message",
               submit: "SUBMIT",
+              successMessage: "Message sent",
             },
             header: {
               home: "HOME",
@@ -133,6 +134,7 @@ i18n
               telephone: "טלפון נייד",
               message: "הודעה",
               submit: "שלח הודעה",
+              successMessage: "הודעה נשלחה",
             },
             header: {
               home: "ראשי",
@@ -213,6 +215,7 @@ i18n
               telephone: "Мобильный телефон",
               message: "Сообщение",
               submit: "ОТПРАВИТЬ",
+              successMessage: "Сообщение отправлено",
             },
             header: {
               home: "ГЛАВНАЯ",
