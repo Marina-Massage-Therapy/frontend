@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 import "../assets/css/Carousel.css";
+import { useTranslation } from "react-i18next";
 
 const Carousel = ({ imageUrls }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   const showNextImage = () => {
     setImageIndex((index) => {
@@ -65,7 +67,7 @@ const Carousel = ({ imageUrls }) => {
           className="read-more-slider-btn"
           onClick={() => navigate("/massages")}
         >
-          Read More
+          {t("cmps.homeTopSection.read")}
         </button>
       </div>
       <div
