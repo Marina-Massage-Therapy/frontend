@@ -28,13 +28,13 @@
 }
 
 .overlay-text h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 65px;
+  font-family: "PlayfairDisplay-ExtraBoldItalic";
+  font-size: 45px;
   margin: 0 0 20px 0;
 }
 
 .overlay-text h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "PlayfairDisplay-Italic";
   font-size: 25px;
   margin: 0;
 }
@@ -70,10 +70,11 @@
     top: 70px;
   }
   .overlay-text h1 {
-    font-size: 25px;
+    font-size: 20px;
+    padding-top: 18px;
   }
 
   .overlay-text h4 {
-    font-size: 15px;
+    font-size: 12px;
   }
 }

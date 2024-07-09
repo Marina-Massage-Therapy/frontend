@@ -21,11 +21,11 @@ const Welcome = () => {
         <br />
         <br />
         <p>{t("cmps.welcome.p2")}</p>
-        <div className="read-more-btn">
-          <button onClick={() => navigate("/about")}>
-            {t("cmps.welcome.read")}
-          </button>
-        </div>
+      </div>
+      <div className="read-more-btn">
+        <button onClick={() => navigate("/about")}>
+          {t("cmps.welcome.read")}
+        </button>
       </div>
     </div>
   );

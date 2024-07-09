@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import "./App.css";
+import "./fonts.css";
 import Header from "./cmps/Header";
 import Home from "./pages/Home";
 import Massages from "./pages/Massages";

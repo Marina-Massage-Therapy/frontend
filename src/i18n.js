@@ -34,7 +34,7 @@ i18n
             homeTopSection: {
               title: "Marina Massage Therapist",
               subtitle:
-                "Your well-being is my focus, and your journey to balance and tension relese begins now.",
+                "Your journey to balance and tension release begins now.",
               read: "Read More",
             },
             newTestimonialCard: {
@@ -144,8 +144,7 @@ i18n
             },
             homeTopSection: {
               title: "מרינה מעסה מקצועית",
-              subtitle:
-                "הרווחה שלך היא המיקוד שלי, והמסע שלך לאיזון ולשחרור מתח מתחיל כאן",
+              subtitle: "המסע שלך לאיזון ולשחרור מתח מתחיל כאן",
               read: "קרא עוד",
             },
             newTestimonialCard: {
@@ -225,8 +224,7 @@ i18n
             },
             homeTopSection: {
               title: "Марина Профессиональный Массажист",
-              subtitle:
-                "Ваше благосостояние - центр моего внимания, и ваш путь к балансу и снятию напряжения начинается прямо сейчас.",
+              subtitle: "Ваш путь к снятию напряжения начинается прямо сейчас.",
               read: "Читать Далее",
             },
             newTestimonialCard: {

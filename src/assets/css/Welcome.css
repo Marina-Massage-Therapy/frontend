@@ -15,13 +15,17 @@
 }
 
 .title-wrap > h6 {
+  font-family: "PlayfairDisplay-Medium";
+  font-weight: 450;
   margin: 0;
-  font-size: 17px;
+  font-size: 18px;
   text-align: center;
 }
 
 .title-wrap > h2 {
-  font-size: 30px;
+  font-family: "PlayfairDisplay-Medium";
+  font-weight: 200;
+  font-size: 28px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -36,7 +40,7 @@
 
 .content-wrap > p {
   margin: 0;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   font-weight: 400;
 }
@@ -82,10 +86,20 @@
     text-align: left;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 15px;
+  }
+  .title-wrap > h2 {
+    font-size: 25px;
+  }
+  .title-wrap > h2 {
+    font-size: 22px;
   }
 }
 .text-right > p {
   text-align: left;
   padding-left: 7px;
   padding-right: 7px;
+}
+.read-more-btn {
+  margin-top: 0;
 }
