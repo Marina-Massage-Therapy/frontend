@@ -29,17 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  font-family: "PlayfairDisplay-ExtraBoldItalic";
-}
-
-h2,
-h6 {
-  font-family: "PlayfairDisplay-Medium";
-} */
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

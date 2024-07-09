@@ -1,7 +1,7 @@
-import "../assets/css/Massages.css";
 import { t } from "i18next";
 import { massagesData } from "../massagesData";
 import Card from "../cmps/Card";
+import "../assets/css/Massages.css";
 import "../assets/css/Card.css";
 import massagesBackground from "../assets/img/massagesBackground.jpg";
 
