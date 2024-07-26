@@ -15,4 +15,4 @@ Context API - State management
 Deployed app - https://main.d2tvvv5hcr4651.amplifyapp.com/
 
 ![alt text](https://github.com/Marina-Massage-Therapy/frontend/blob/main/src/assets/img/screen1.jpg)
-![alt text](https://github.com/Marina-Massage-Therapy/frontend/blob/main/src/assets/img/sceen.jpg)
+![alt text](https://github.com/Marina-Massage-Therapy/frontend/blob/main/src/assets/img/sceen6.jpg)
